@@ -1,0 +1,59 @@
+{% load static %}
+<div class="box-widget {{ widget.classes }}">
+    {% if widget.name %}<h2 class="box-widget-name">{{ page }}</h2>{% endif %}
+    <div class="box-widget-content" id="{{ widget.html_id }}"></div>
+    {% with chart_url='admin:'|add:widget.url_name %}
+    <script>
+        var chart;
+        var data = {{ data|safe }}
+        jQuery(document).ready(function() {
+                chart = new Highcharts.Chart({
+        chart: {
+        renderTo: 'enrollment_container',
+        defaultSeriesType: 'line',
+        marginRight: 130,
+        marginBottom: 30
+        },
+        title: {
+        text: 'Trends',
+        x: -20 //center
+        },
+        subtitle: {
+        text: '',
+        x: -20
+        },
+        xAxis: 
+            {
+            "type": "datetime",
+            },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            plotLines: [{
+            value: 0,
+               width: 1,
+               color: '#808080'
+                   }]
+               },
+            tooltip: {
+            formatter: function() {
+                       return this.series.name +':  ('+this.x +', '+ this.y+')';
+                          }
+                               },
+        legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -10,
+        y: 100,
+        borderWidth: 0
+        },
+        series: data
+        });
+        
+        });
+    </script>
+    {% endwith %}
+    <div id="enrollment_container" style="width: 900px;height: 500px;align: center;"></div>
+</div>

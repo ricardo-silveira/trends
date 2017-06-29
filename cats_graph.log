@@ -1,0 +1,331 @@
+ERROR:django.request:Internal Server Error: /trend/users/
+Traceback (most recent call last):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 527, in render
+    six.iteritems(self.extra_context)}
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 526, in <dictcomp>
+    values = {key: val.resolve(context) for key, val in
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 730, in resolve
+    arg_vals.append(arg.resolve(context))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [url_name] in u'<trend.widgets.MemberRegistrations object at 0x7f0378fd0d90>'
+ERROR:django.request:Internal Server Error: /trend/trend/trendfactor/
+Traceback (most recent call last):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: no such table: trend_trendfactor
+ERROR:django.request:Internal Server Error: /trend/trend/trendfactor/add/
+Traceback (most recent call last):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 1061, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1099, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: trend_trendfactor
+ERROR:django.request:Internal Server Error: /trend/djcelery/periodictask/
+Traceback (most recent call last):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 206, in get_user
+    user_id = _get_user_session_key(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 1103, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: database is locked
+ERROR:django.request:Internal Server Error: /trend/djcelery/periodictask/
+Traceback (most recent call last):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 213, in get_user
+    user = backend.get_user(user_id)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/contrib/auth/backends.py", line 102, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 1103, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/ricardo/.virtualenvs/big_data/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: database is locked

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+<div class="original-data">
+ Original Data:<br />
+ {% for ref in refs %}
+   <li>{{ ref }} - {% for foo in ref.foo.all %}{{ foo }}, {% endfor %}</li>
+ {% endfor %}
+</div>
+<hr />
+
+<div class="main-search">
+  <div class="SearchWithTags">
+    <select name="tags" id="TagDropDown">
+      <option>Choice categories...</option>
+      {% for k in types_list %}
+        <option value="{{ k.name }}">{{ k.name }}</option>
+      {% endfor %}
+    </select>
+    <div class="PlaceForTags">
+      <div id="PlaceForTagsId" class="Tags">
+      </div>
+    </div>
+  </div>
+  <button id="SendTagArray" class="search">Search...</button>
+</div><!-- end /.main-search -->
+
+<div class="main-results">
+</div>
+
+<script>
+  values = [];
+  $(function() {
+    $('#TagDropDown').change(function() {
+        var val = $('#TagDropDown option:selected').text();
+      // check if has duplicate values
+      if (values.includes(val) == false){
+        values.push(val);
+        $('#PlaceForTagsId').append("<div class='tagex'>" +$('#TagDropDown option:selected').text()+"</div>");
+      }
+    });
+    $("#SendTagArray").click(function(){
+      console.log(values);
+      $.ajax({
+        type: 'GET',
+        url: '{% url "search" %}',
+        data: {
+          'csrfmiddlewaretoken': '{{ csrf_token }}', 
+          'tags': values
+        },
+        success: function(data) {
+           $('.main-results').html(data);
+        },
+        error: function(data) {
+           console.log(data);
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
